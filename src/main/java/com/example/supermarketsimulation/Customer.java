@@ -1,5 +1,9 @@
 package com.example.supermarketsimulation;
 
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -12,24 +16,33 @@ public class Customer {
     private int maxCapacity;
     private double money;
 
-    Customer(int id, double money) {
+
+
+
+    private ImageView view;
+
+
+    public Customer(int id, double money, String containerType, List<String> wishlist) {
         this.id = id;
         this.name = "Customer-" + id;
         this.money = money;
         this.items = new ArrayList<>();
-        this.wishlist = new ArrayList<>();
-        this.containerType = "basket";
-        this.maxCapacity = 15;
+        this.wishlist =  wishlist;
+        this.containerType = containerType;
+        this.maxCapacity = containerType.equals("shopping cart") ? 15 : 5;
+
+        Image image = new Image(getClass().getResource("/com/example/supermarketsimulation/Images/Customer.png").toExternalForm());
+        view = new ImageView(image);
+
+        view.setFitHeight(80);
+        view.setFitWidth(50);
+
+        view.setX(23);
+        view.setY(41);
     }
 
-    Customer(int id, double money, String containerType) {
-        this.id = id;
-        this.name = "Customer-" + id;
-        this.money = money;
-        this.items = new ArrayList<>();
-        this.wishlist = new ArrayList<>();
-        this.containerType = containerType;
-        this.maxCapacity = containerType.equals("shopping cart") ? 50 : 5;
+    public ImageView getView() {
+        return view;
     }
 
     public int getId() {
@@ -86,7 +99,7 @@ public class Customer {
 
     public void setContainerType(String containerType) {
         this.containerType = containerType;
-        this.maxCapacity = containerType.equals("shopping cart") ? 50 : 5;
+        this.maxCapacity = containerType.equals("shopping cart") ? 15 : 5;
     }
 
     public void setMaxCapacity(int maxCapacity) {
