@@ -2,8 +2,11 @@ package com.example.supermarketsimulation;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.animation.TranslateTransition;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
 import javafx.scene.layout.Pane;
+import javafx.scene.shape.Circle;
 import javafx.util.Duration;
 import java.util.*;
 
@@ -12,6 +15,9 @@ public class HelloController {
     private Pane rootPane;
 
     private int customerCounter = 0;
+
+    @FXML
+    private Circle waypoint1;
 
 
     @FXML
@@ -75,10 +81,21 @@ public class HelloController {
 
         Customer c = new Customer(customerCounter, 1000, container, wishList);
 
+        moveToWaypoint(c.getView(), waypoint1.getLayoutX(), waypoint1.getLayoutY(), 2);
+
+
         System.out.println("Customer " + customerCounter + " created" + " , WishList: " + wishList);
         System.out.println("Container type: " + container);
 
         rootPane.getChildren().add(c.getView());
+    }
+
+    public void moveToWaypoint(Node node, double x , double y, double delayInSeconds){
+        TranslateTransition tt = new TranslateTransition(Duration.seconds(2), node);
+        tt.setToX(x - 49 - node.getLayoutX());
+        tt.setToY(y - 82 - node.getLayoutY());
+        tt.setDelay(Duration.seconds(delayInSeconds));
+        tt.play();
     }
 
 

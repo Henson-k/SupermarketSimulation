@@ -4,43 +4,43 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.shape.Rectangle?>
 
-<Pane fx:id="rootPane" prefHeight="800" prefWidth="1500" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.supermarketsimulation.HelloController" >
+<Pane fx:id="rootPane" prefHeight="800" prefWidth="1500" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.supermarketsimulation.HelloController">
     <!-- Centered walking area -->
     <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#dfe9f2" height="717.0" stroke="BLACK" strokeType="INSIDE" width="1454.0" x="23" y="41" />
     <!-- Spawning point (top-left of walking area) -->
     <Rectangle arcHeight="5" arcWidth="5" fill="chartreuse" height="80" width="80" x="23" y="41" />
 
     <!-- first walking waypoint -->
-    <Circle fill="DODGERBLUE" layoutX="100.0" layoutY="400.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+    <Circle fx:id="waypoint1" fill="DODGERBLUE" layoutX="103.0" layoutY="378.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
 
     <!-- shelf and waypoint 1 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="171.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="271.0" layoutY="233.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fill="DODGERBLUE" layoutX="404.0" layoutY="240.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 2 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="171.0" layoutY="325.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="271.0" layoutY="381.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fill="DODGERBLUE" layoutX="404.0" layoutY="388.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 3 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="171.0" layoutY="475.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="482.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
    <Circle fill="DODGERBLUE" layoutX="123.0" layoutY="702.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- Freezer and waypoint -->
    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00bbff" height="46.0" layoutX="23.0" layoutY="712.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="271.0" layoutY="531.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Circle fill="DODGERBLUE" layoutX="404.0" layoutY="538.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 4 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="501.0" layoutY="177.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="601.0" layoutY="233.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fill="DODGERBLUE" layoutX="734.0" layoutY="241.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 5 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="501.0" layoutY="325.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="601.0" layoutY="381.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fill="DODGERBLUE" layoutX="734.0" layoutY="388.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 6 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="501.0" layoutY="475.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="601.0" layoutY="531.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="482.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fill="DODGERBLUE" layoutX="734.0" layoutY="538.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- register and both waypoints for cassier and customer -->
    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9bafc1" height="157.0" layoutX="1193.0" layoutY="420.0" stroke="BLACK" strokeType="INSIDE" width="29.0" />
