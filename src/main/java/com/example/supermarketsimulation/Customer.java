@@ -15,10 +15,7 @@ public class Customer {
     private String containerType; // "basket" or "shopping cart"
     private int maxCapacity;
     private double money;
-
-
-
-
+    private CustomerManager manager;
     private ImageView view;
 
 

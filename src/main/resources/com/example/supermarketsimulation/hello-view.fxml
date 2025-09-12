@@ -15,32 +15,32 @@
 
 
     <!-- shelf and waypoint 1 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="404.0" layoutY="240.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle fx:id="appleShelf" arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="184.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fx:id="apple" fill="DODGERBLUE" layoutX="404.0" layoutY="240.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 2 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="404.0" layoutY="388.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle fx:id="batteriesShelf" arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fx:id="batteries" fill="DODGERBLUE" layoutX="404.0" layoutY="388.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 3 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="482.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="123.0" layoutY="702.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle fx:id="chipsShelf" arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="304.0" layoutY="482.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fx:id="chips" fill="DODGERBLUE" layoutX="123.0" layoutY="702.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- Freezer and waypoint -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00bbff" height="46.0" layoutX="23.0" layoutY="712.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="404.0" layoutY="538.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle fx:id="pizzaShelf" arcHeight="5.0" arcWidth="5.0" fill="#00bbff" height="46.0" layoutX="23.0" layoutY="712.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fx:id="pizza" fill="DODGERBLUE" layoutX="404.0" layoutY="538.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 4 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="734.0" layoutY="241.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle fx:id="coca_colaShelf" arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="185.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fx:id="coca_cola" fill="DODGERBLUE" layoutX="734.0" layoutY="241.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 5 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="734.0" layoutY="388.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle  fx:id="magazineShelf" arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="332.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fx:id="magazine" fill="DODGERBLUE" layoutX="734.0" layoutY="388.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- shelf and waypoint 6 -->
-   <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="482.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
-   <Circle fill="DODGERBLUE" layoutX="734.0" layoutY="538.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
+   <Rectangle fx:id="soapShelf" arcHeight="5.0" arcWidth="5.0" fill="#765d34" height="46.0" layoutX="634.0" layoutY="482.0" stroke="BLACK" strokeType="INSIDE" width="200.0" />
+   <Circle fx:id="soap" fill="DODGERBLUE" layoutX="734.0" layoutY="538.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" />
 
     <!-- register and both waypoints for cassier and customer -->
    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#9bafc1" height="157.0" layoutX="1193.0" layoutY="420.0" stroke="BLACK" strokeType="INSIDE" width="29.0" />

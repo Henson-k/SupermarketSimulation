@@ -3,6 +3,8 @@ module com.example.supermarketsimulation {
     requires javafx.fxml;
 
     requires com.almasb.fxgl.all;
+    requires javafx.graphics;
+    requires javafx.base;
 
     opens com.example.supermarketsimulation to javafx.fxml;
     exports com.example.supermarketsimulation;

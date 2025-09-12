@@ -1,34 +1,31 @@
 package com.example.supermarketsimulation;
 
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.shape.Rectangle;
 
 public class Shelf {
-    private String shelfName;
-    private String shelfProduct;
-    private int quantity;
-    public Shelf(String shelfName, String shelfProduct, int quantity) {}
+    private int id;
+    private Product product;
+    private Rectangle node;
+    public static String[] existingGroceries = {
+            "apple", "pizza", "chips", "coca_cola", "batteries", "magazines", "soap"
+    };
 
-    public Shelf(String shelfName, String shelfProduct) {
-        this.shelfName = shelfName;
-        this.shelfProduct = shelfProduct;
+    public Shelf(int id, Product product, Rectangle node) {
+        this.id = id;
+        this.product = product;
+        this.node = node;
     }
-    public String getShelfName() {
-        return shelfName;
+    public int getId() {
+        return id;
     }
-    public String getShelfProduct() {
-        return shelfProduct;
+    public Product getProduct() {
+        return product;
     }
-    public int getQuantity() {
-        return quantity;
+    public Rectangle getNode() {
+        return node;
     }
-
-    public void setShelfName(String shelfName) {
-        this.shelfName = shelfName;
-    }
-    public void setShelfProduct(String shelfProduct) {
-        this.shelfProduct = shelfProduct;
-    }
-    public void setQuantity(int quantity) {}
 
 
 
